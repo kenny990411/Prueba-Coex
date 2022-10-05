@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+
+/* principales contenedores */
+.containerMenu{
+    width: 100%;
+    height: 150px;
+    background: #707070;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+
+}
+
+.containerIntro{
+    width: 100%;
+    height: 930.5px;
+    background: #707070;
+    display: flex;
+}
+
+.containerFichas{
+    width: 100%;
+    height: 1079px;
+    background: #0F0D1D;
+    display: flex;
+    flex-direction: column;
+}
+
+/* editando containerMenu */
+
+    /* ajustar listado */
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul>li>a{
+        padding: 20px;
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight:600;
+    }
+
+    /* componentes del nav */
+    .logo{
+        width: 12%;
+        height: 100%;     
+        border-right: 1px solid #FFFFFF;
+    }
+    .items{
+        display: flex; 
+        align-items: center;
+        justify-content: flex-start;
+        width: 55%;
+        height: 100%;
+        margin-left: 20px
+        /* border: 1px solid blue; */
+    }
+    .iconos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 15%;
+        height: 100%;
+        /* border: 1px solid green; */
+        padding: 30px;
+    }
+    .buscador{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6%;
+        height: 100%;
+        border-left: 1px solid #FFFFFF;
+    }
+    .ayuda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 12%;
+        border-left: 1px solid #FFFFFF;
+        height: 100%;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    /* interlineado */
+    .ayuda>p{
+        line-height: 20px;
+        
+    }
+
+/* editando container intro */
+    .contenido{
+        width: 100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        padding-left: 12%;
+        color: #FFFFFF;
+    }
+    .boton{
+        margin-top: 20px;
+        font-size: 18px;
+        background: #3C72FC;
+        color:#FFFFFF;
+        display: flex;
+        width: 250px;
+        height: 70px;
+        justify-content: center;
+        align-items: center
+    }
+    .contenido>h3{
+        font-size: 20px;
+        padding-top: 8%;
+        
+    }
+    .contenido>h1{
+        font-size: 90px;
+        padding-top: 5%;
+        letter-spacing: 2px;
+    }
+
+/* desarrollo fichas */
+    /* grid */
+    .container-grid{
+        /* border: 1px solid red; */
+        width: 75%;
+        height: 100%;
+        margin: auto;
+    
+       }
+       .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 26px;
+        color: #FFFFFF;
+        }
+        
+        .div1 { 
+            grid-area: 1 / 1 / 2 / 2; 
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #000000;
+            height: 270px;
+        }
+        .div2 { 
+            grid-area: 1 / 2 / 2 / 3; 
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #000000;
+        }
+        .div3 { 
+            grid-area: 1 / 3 / 2 / 4; 
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #000000;
+        }
+
+        /* containerFichas */
+        .containerFichas>.titulo{
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 125px;
+            font-size: 25px;
+        }
+        .containerFichas>.titulo>h1{
+            font-size: 50px;
+        }
+
+        .containerFichas>.titulo>h3{
+            padding-top: 15px;
+            font-size: 18px;
+            color: #8F8DA0;
+            padding-bottom: 95px;
+        }
+
+        .divContainer-Izq{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 1px solid blue; */
+            width: 70%;
+            font-size: 20px;
+            padding-left: 60px;
+            padding-top: 4px;
+            line-height: 30px;
+        }
+
+        .divContainer-Izq>.boton2{
+            font-size: 13px;
+            padding-top: 40px;
+            color: #8F8DA0;
+        }
+
+        .divContainer-Der{
+            display: flex;
+            flex-direction: row;
+            align-items:flex-end;
+            /* border: 1px solid yellow; */
+            width: 30%;
+            padding-bottom: 50px;
+        }
+
+        /* Ajuste de seccion barra */
+
+        .barra{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 15%;
+            margin-top:30px;
+        }
+        .barra>h1{
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .linea {
+            width:34.5%;    
+            border-top:1px solid #32303D;
+            }
+          
+          .leyenda {
+            font-weight:bold;
+            color: #FFFFFF;
+            padding-bottom: 10px;
+           }
+
+        .partners{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-left: 8%;
+            margin-right: 8%;
+            margin-top: 5%;
+            
+            
+        }
+
+        .partners>div{
+            background: #3C72FC;
+            width:150px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 12px;
+        }
+
+      .partners>img{
+        border: 1px solid #3C72FC;
+        background: #4d7cf221;
+        padding: 10px;
+      }
